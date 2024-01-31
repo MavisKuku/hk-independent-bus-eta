@@ -223,14 +223,7 @@ const boxContainerSx: SxProps<Theme> = {
   alignItems: "center",
   justifyContent: "center",
   flex: 1,
-<<<<<<< HEAD
   background: (theme) => theme.palette.background.default,
-=======
-  background: (theme) =>
-    theme.palette.mode === "dark"
-      ? theme.palette.background.default
-      : "#FFFFFF",
->>>>>>> Version_1
 };
 
 const imgContainerSx: SxProps<Theme> = {
@@ -244,14 +237,7 @@ const imgContainerSx: SxProps<Theme> = {
 const buttonContainerSx: SxProps<Theme> = {
   display: "flex",
   width: "100%",
-<<<<<<< HEAD
   backgroundColor: (theme) => theme.palette.background.default,
-=======
-  backgroundColor: (theme) =>
-    theme.palette.mode === "dark"
-      ? theme.palette.background.default
-      : "#FFFFFF",
->>>>>>> Version_1
 };
 
 const buttonSx: SxProps<Theme> = {
