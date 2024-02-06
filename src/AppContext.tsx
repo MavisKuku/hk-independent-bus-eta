@@ -198,10 +198,8 @@ export const AppContextProvider = ({
   const dbContext = useContext(DbContext);
   const collectionContext = useContext(CollectionContext);
   const getInitialState = (): AppState => {
-    const devicePreferColorScheme =
-      localStorage.getItem("colorMode") ||
-      (navigator.userAgent === "prerendering" && "dark") || // set default color theme in prerendering to "dark"
-      "system";
+    const userPreferColorScheme = localStorage.getItem("colorMode");
+    const devicePreferColorScheme = userPreferColorScheme === "dark" || userPreferColorScheme === "light" ? "light" : "light";
     const searchRoute = "";
     const geoPermission: unknown = localStorage.getItem("geoPermission");
     const geoLocation: unknown = JSON.parse(
