@@ -188,7 +188,7 @@ const getThemeTokens = (mode: PaletteMode, fontSize: number) => ({
       : {
           //dark mode
           background: {
-            default: "##c1d7db",
+            default: "#c1d7db",
             contrast: "rgba(255, 255, 255, 0.12)",
           },
           primary: {
