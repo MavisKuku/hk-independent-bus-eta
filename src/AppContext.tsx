@@ -199,7 +199,10 @@ export const AppContextProvider = ({
   const collectionContext = useContext(CollectionContext);
   const getInitialState = (): AppState => {
     const userPreferColorScheme = localStorage.getItem("colorMode");
-    const devicePreferColorScheme = userPreferColorScheme === "dark" || userPreferColorScheme === "light" ? "light" : "light";
+    const devicePreferColorScheme =
+      userPreferColorScheme === "dark" || userPreferColorScheme === "light"
+        ? "light"
+        : "light";
     const searchRoute = "";
     const geoPermission: unknown = localStorage.getItem("geoPermission");
     const geoLocation: unknown = JSON.parse(
