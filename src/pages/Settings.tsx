@@ -223,7 +223,7 @@ const Settings = () => {
             secondary={t(autoRenew ? "開啟" : "關閉")}
           />
         </ListItemButton>
-        
+
         <ListItemButton
           onClick={() => {
             vibrate(vibrateDuration);
