@@ -14,9 +14,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   Settings as SettingsIcon,
-  SettingsBrightness as SettingsBrightnessIcon,
-  WbSunny as WbSunnyIcon,
-  DarkMode as DarkModeIcon,
   WifiOff as WifiOffIcon,
 } from "@mui/icons-material";
 import { visuallyHidden } from "@mui/utils";
@@ -35,8 +32,6 @@ const Header = () => {
     geoPermission,
     updateGeolocation,
     changeLanguage,
-    _colorMode,
-    toggleColorMode,
   } = useContext(AppContext);
   const { t, i18n } = useTranslation();
   let location = useLocation();

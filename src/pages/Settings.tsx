@@ -26,7 +26,6 @@ import {
   Telegram as TelegramIcon,
   Fingerprint as FingerprintIcon,
   Gavel as GavelIcon,
-  InsertEmoticon as InsertEmoticonIcon,
   SsidChart as SsidChartIcon,
   BarChart as BarChartIcon,
   Info as InfoIcon,
