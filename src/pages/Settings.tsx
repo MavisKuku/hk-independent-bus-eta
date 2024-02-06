@@ -224,22 +224,7 @@ const Settings = () => {
             secondary={t(autoRenew ? "開啟" : "關閉")}
           />
         </ListItemButton>
-        <ListItemButton
-          onClick={() => {
-            vibrate(vibrateDuration);
-            setIsPersonalizeDialog(true);
-          }}
-        >
-          <ListItemAvatar>
-            <Avatar>
-              <InsertEmoticonIcon />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText
-            primary={t("個性化設定")}
-            secondary={t("日夜模式、時間格式、路線次序等")}
-          />
-        </ListItemButton>
+        
         <ListItemButton
           onClick={() => {
             vibrate(vibrateDuration);

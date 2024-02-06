@@ -176,18 +176,7 @@ const Header = () => {
         >
           {i18n.language !== "zh" ? "繁" : "En"}
         </Button>
-        <IconButton
-          onClick={() => {
-            vibrate(vibrateDuration);
-            toggleColorMode();
-          }}
-        >
-          {_colorMode === "system" && (
-            <SettingsBrightnessIcon fontSize="small" />
-          )}
-          {_colorMode === "light" && <WbSunnyIcon fontSize="small" />}
-          {_colorMode === "dark" && <DarkModeIcon fontSize="small" />}
-        </IconButton>
+
         <IconButton
           component={Link}
           to={`/${i18n.language}/settings`}
